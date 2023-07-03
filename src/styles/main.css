@@ -1,0 +1,35 @@
+@import "./markdown.css";
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+  color-scheme: dark;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13, 148, 136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.dropzone {
+  @apply col center my-4 mx-2d w-full h-full border-2 border-dashed border-gray-800 rounded-md;
+  @apply bg-gray-100 text-gray-800 text-center text-sm font-medium transition-colors duration-150 ease-in-out;
+  @apply px-4 py-4 cp opacity-50 hover: opacity-100;
+}
